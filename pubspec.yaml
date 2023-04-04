@@ -28,20 +28,24 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  camera: ^0.10.3+2
   cupertino_icons: ^1.0.2
+  dio: ^5.0.1
   flutter:
     sdk: flutter
-  flutter_compass: ^0.7.0
-  flutter_qiblah: ^2.1.0
-  get: ^4.6.5
-  percent_indicator: ^4.2.2
-  permission_handler: ^10.2.0
-  sizer: ^2.0.15
-  step_progress_indicator: ^1.0.2
-  flutter_svg: ^2.0.2
   flutter_cached_pdfview: ^0.4.1
-  syncfusion_flutter_pdfviewer: ^20.4.52
-  quran: ^1.2.0
+  flutter_countdown_timer: ^4.1.0
+  flutter_qiblah: ^2.1.0
+  flutter_svg: ^2.0.2
+  geolocator: ^9.0.2
+  get: ^4.6.5
+  internet_connection_checker: ^1.0.0+1
+  intl: ^0.18.0
+  path_provider: ^2.0.13
+  percent_indicator: ^4.2.2
+  shared_preferences: ^2.0.18
+  sizer: ^2.0.15
+  chatview: ^1.2.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -60,7 +64,18 @@ flutter:
   assets:
     - assets/images/
     - assets/db/
+    - assets/
+    - assets/quran.txt
   fonts:
     - family: Othmani
       fonts:
         - asset: assets/fonts/UthmanicHafs_V20.ttf
+    - family: NotoKufiArabic
+      fonts:
+        - asset: assets/fonts/NotoKufiArabic-Regular.ttf
+    - family: Maghribi
+      fonts:
+        - asset: assets/fonts/Maghribi.ttf
+    - family: me_quran
+      fonts:
+        - asset: assets/fonts/me_quran.ttf
