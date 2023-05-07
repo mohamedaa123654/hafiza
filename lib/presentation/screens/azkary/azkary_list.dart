@@ -21,6 +21,7 @@ class AzkaryList extends StatelessWidget {
           child: GridView.builder(
             // physics: NeverScrollableScrollPhysics(),
             // shrinkWrap: true,
+            padding: EdgeInsets.only(bottom: 2.h),
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 32.w,
                 crossAxisSpacing: 3.w,
@@ -53,11 +54,12 @@ class AzkaryTitleItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: () async {
         controller.id.value = model.id!;
         controller.title.value = model.name!;
         await controller.loadSections(context);
+        await controller.closeLastZikr();
         Get.to(() => zikrScreen());
       },
       child: Container(
@@ -73,6 +75,7 @@ class AzkaryTitleItem extends StatelessWidget {
               'assets/images/azkary/${model.id}.png',
               width: 15.w,
               height: 15.w,
+              color: ColorManager.primary,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 1.w),

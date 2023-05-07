@@ -7,7 +7,7 @@
         "Number_Words":29,
         "Number_Letters":139,
         "Descent":"مكية",
-        "Page_Number":0
+        "Page_Number":1
         
     },
     {
@@ -18,7 +18,7 @@
         "Number_Words":6144,
         "Number_Letters":25613,
         "Descent":"مدنية",
-        "Page_Number":0
+        "Page_Number":2
     },
     {
         "Name":"آل عمران",
@@ -28,7 +28,7 @@
         "Number_Words":3503,
         "Number_Letters":14605,
         "Descent":"مدنية",
-        "Page_Number":48
+        "Page_Number":50
     },
     {
         "Name":"النساء",
@@ -38,7 +38,7 @@
         "Number_Words":3745,
         "Number_Letters":16030,
         "Descent":"مدنية",
-        "Page_Number":75
+        "Page_Number":77
     },
     {
         "Name":"المائدة",
@@ -48,7 +48,7 @@
         "Number_Words":2837,
         "Number_Letters":11892,
         "Descent":"مدنية",
-        "Page_Number":104
+        "Page_Number":106
     },
     {
         "Name":"الأنعام",
@@ -58,7 +58,7 @@
         "Number_Words":3055,
         "Number_Letters":12418,
         "Descent":"مكية",
-        "Page_Number":126
+        "Page_Number":128
     },
     {
         "Name":"الأعراف",
@@ -68,7 +68,7 @@
         "Number_Words":3344,
         "Number_Letters":14071,
         "Descent":"مكية",
-        "Page_Number":149
+        "Page_Number":151
     },
     {
         "Name":"الأنفال",
@@ -78,7 +78,7 @@
         "Number_Words":1243,
         "Number_Letters":5299,
         "Descent":"مدنية",
-        "Page_Number":175
+        "Page_Number":177
     },
     {
         "Name":"التوبة",
@@ -88,7 +88,7 @@
         "Number_Words":2506,
         "Number_Letters":10873,
         "Descent":"مدنية",
-        "Page_Number":185
+        "Page_Number":187
     },
     {
         "Name":"يونس",
@@ -98,7 +98,7 @@
         "Number_Words":1841,
         "Number_Letters":7425,
         "Descent":"مكية",
-        "Page_Number":206
+        "Page_Number":208
     },
     {
         "Name":"هود",
@@ -108,7 +108,7 @@
         "Number_Words":1947,
         "Number_Letters":7633,
         "Descent":"مكية",
-        "Page_Number":219
+        "Page_Number":221
     },
     {
         "Name":"يوسف",
@@ -118,7 +118,7 @@
         "Number_Words":1795,
         "Number_Letters":7125,
         "Descent":"مكية",
-        "Page_Number":233
+        "Page_Number":235
     },
     {
         "Name":"الرعد",
@@ -128,7 +128,7 @@
         "Number_Words":854,
         "Number_Letters":3450,
         "Descent":"مدنية",
-        "Page_Number":247
+        "Page_Number":249
     },
     {
         "Name":"إبراهيم",
@@ -138,7 +138,7 @@
         "Number_Words":831,
         "Number_Letters":3461,
         "Descent":"مكية",
-        "Page_Number":253
+        "Page_Number":255
     },
     {
         "Name":"الحجر",
@@ -148,7 +148,7 @@
         "Number_Words":658,
         "Number_Letters":2797,
         "Descent":"مكية",
-        "Page_Number":260
+        "Page_Number":262
     },
     {
         "Name":"النحل",
@@ -158,7 +158,7 @@
         "Number_Words":1845,
         "Number_Letters":7642,
         "Descent":"مكية",
-        "Page_Number":265
+        "Page_Number":267
     },
     {
         "Name":"الإسراء",
@@ -168,7 +168,7 @@
         "Number_Words":1559,
         "Number_Letters":6480,
         "Descent":"مكية",
-        "Page_Number":280
+        "Page_Number":282
     },
     {
         "Name":"الكهف",
@@ -178,7 +178,7 @@
         "Number_Words":1583,
         "Number_Letters":6425,
         "Descent":"مكية",
-        "Page_Number":291
+        "Page_Number":293
     },
     {
         "Name":"مريم",
@@ -188,7 +188,7 @@
         "Number_Words":972,
         "Number_Letters":3835,
         "Descent":"مكية",
-        "Page_Number":303
+        "Page_Number":305
     },
     {
         "Name":"طه",
@@ -198,7 +198,7 @@
         "Number_Words":1354,
         "Number_Letters":5288,
         "Descent":"مكية",
-        "Page_Number":310
+        "Page_Number":312
     },
     {
         "Name":"الأنبياء",
@@ -208,7 +208,7 @@
         "Number_Words":1174,
         "Number_Letters":4925,
         "Descent":"مكية",
-        "Page_Number":320
+        "Page_Number":322
     },
     {
         "Name":"الحج",
@@ -218,7 +218,7 @@
         "Number_Words":1279,
         "Number_Letters":5196,
         "Descent":"مدنية",
-        "Page_Number":330
+        "Page_Number":332
     },
     {
         "Name":"المؤمنون",
@@ -228,7 +228,7 @@
         "Number_Words":1840,
         "Number_Letters":4802,
         "Descent":"مكية",
-        "Page_Number":340
+        "Page_Number":342
     },
     {
         "Name":"النور",
@@ -238,7 +238,7 @@
         "Number_Words":1317,
         "Number_Letters":5596,
         "Descent":"مدنية",
-        "Page_Number":348
+        "Page_Number":350
     },
     {
         "Name":"الفرقان",
@@ -248,7 +248,7 @@
         "Number_Words":896,
         "Number_Letters":3786,
         "Descent":"مكية",
-        "Page_Number":357
+        "Page_Number":359
     },
     {
         "Name":"الشعراء",
@@ -258,7 +258,7 @@
         "Number_Words":1322,
         "Number_Letters":5517,
         "Descent":"مكية",
-        "Page_Number":365
+        "Page_Number":367
     },
     {
         "Name":"النمل",
@@ -268,7 +268,7 @@
         "Number_Words":1165,
         "Number_Letters":4679,
         "Descent":"مكية",
-        "Page_Number":375
+        "Page_Number":377
     },
     {
         "Name":"القصص",
@@ -278,7 +278,7 @@
         "Number_Words":1441,
         "Number_Letters":5791,
         "Descent":"مكية",
-        "Page_Number":383
+        "Page_Number":385
     },
     {
         "Name":"العنكبوت",
@@ -288,7 +288,7 @@
         "Number_Words":982,
         "Number_Letters":4200,
         "Descent":"مكية",
-        "Page_Number":394
+        "Page_Number":396
     },
     {
         "Name":"الروم",
@@ -298,7 +298,7 @@
         "Number_Words":819,
         "Number_Letters":3388,
         "Descent":"مكية",
-        "Page_Number":402
+        "Page_Number":404
     },
     {
         "Name":"لقمان",
@@ -308,7 +308,7 @@
         "Number_Words":550,
         "Number_Letters":2121,
         "Descent":"مكية",
-        "Page_Number":409
+        "Page_Number":411
     },
     {
         "Name":"السجدة",
@@ -318,7 +318,7 @@
         "Number_Words":374,
         "Number_Letters":1523,
         "Descent":"مكية",
-        "Page_Number":413
+        "Page_Number":415
     },
     {
         "Name":"الأحزاب",
@@ -328,7 +328,7 @@
         "Number_Words":1303,
         "Number_Letters":5618,
         "Descent":"مدنية",
-        "Page_Number":416
+        "Page_Number":418
     },
     {
         "Name":"سبأ",
@@ -338,7 +338,7 @@
         "Number_Words":884,
         "Number_Letters":3510,
         "Descent":"مكية",
-        "Page_Number":426
+        "Page_Number":428
     },
     {
         "Name":"فاطر",
@@ -348,7 +348,7 @@
         "Number_Words":780,
         "Number_Letters":3159,
         "Descent":"مكية",
-        "Page_Number":432
+        "Page_Number":434
     },
     {
         "Name":"يس",
@@ -358,7 +358,7 @@
         "Number_Words":733,
         "Number_Letters":2988,
         "Descent":"مكية",
-        "Page_Number":438
+        "Page_Number":440
     },
     {
         "Name":"الصافات",
@@ -368,7 +368,7 @@
         "Number_Words":865,
         "Number_Letters":3790,
         "Descent":"مكية",
-        "Page_Number":444
+        "Page_Number":446
     },
     {
         "Name":"ص",
@@ -378,7 +378,7 @@
         "Number_Words":735,
         "Number_Letters":2991,
         "Descent":"مكية",
-        "Page_Number":451
+        "Page_Number":453
     },
     {
         "Name":"الزمر",
@@ -388,7 +388,7 @@
         "Number_Words":1177,
         "Number_Letters":4741,
         "Descent":"مكية",
-        "Page_Number":456
+        "Page_Number":458
     },
     {
         "Name":"غافر",
@@ -398,7 +398,7 @@
         "Number_Words":1228,
         "Number_Letters":4984,
         "Descent":"مكية",
-        "Page_Number":465
+        "Page_Number":467
     },
     {
         "Name":"فصلت",
@@ -408,7 +408,7 @@
         "Number_Words":796,
         "Number_Letters":3282,
         "Descent":"مكية",
-        "Page_Number":475
+        "Page_Number":477
     },
     {
         "Name":"الشورى",
@@ -418,7 +418,7 @@
         "Number_Words":860,
         "Number_Letters":3431,
         "Descent":"مكية",
-        "Page_Number":481
+        "Page_Number":483
     },
     {
         "Name":"الزخرف",
@@ -428,7 +428,7 @@
         "Number_Words":825,
         "Number_Letters":3703,
         "Descent":"مكية",
-        "Page_Number":487
+        "Page_Number":489
     },
     {
         "Name":"الدخان",
@@ -438,7 +438,7 @@
         "Number_Words":346,
         "Number_Letters":1439,
         "Descent":"مكية",
-        "Page_Number":494
+        "Page_Number":496
     },
     {
         "Name":"الجاثية",
@@ -448,7 +448,7 @@
         "Number_Words":488,
         "Number_Letters":2014,
         "Descent":"مكية",
-        "Page_Number":497
+        "Page_Number":499
     },
     {
         "Name":"الأحقاف",
@@ -458,7 +458,7 @@
         "Number_Words":646,
         "Number_Letters":2602,
         "Descent":"مكية",
-        "Page_Number":500
+        "Page_Number":502
     },
     {
         "Name":"محمد",
@@ -468,7 +468,7 @@
         "Number_Words":542,
         "Number_Letters":2360,
         "Descent":"مدنية",
-        "Page_Number":505
+        "Page_Number":507
     },
     {
         "Name":"الفتح",
@@ -478,7 +478,7 @@
         "Number_Words":560,
         "Number_Letters":2456,
         "Descent":"مدنية",
-        "Page_Number":509
+        "Page_Number":511
     },
     {
         "Name":"الحجرات",
@@ -488,7 +488,7 @@
         "Number_Words":353,
         "Number_Letters":1493,
         "Descent":"مدنية",
-        "Page_Number":513
+        "Page_Number":515
     },
     {
         "Name":"ق",
@@ -498,7 +498,7 @@
         "Number_Words":373,
         "Number_Letters":1473,
         "Descent":"مكية",
-        "Page_Number":516
+        "Page_Number":518
     },
     {
         "Name":"الذاريات",
@@ -508,7 +508,7 @@
         "Number_Words":360,
         "Number_Letters":1510,
         "Descent":"مكية",
-        "Page_Number":518
+        "Page_Number":520
     },
     {
         "Name":"الطور",
@@ -518,7 +518,7 @@
         "Number_Words":312,
         "Number_Letters":1293,
         "Descent":"مكية",
-        "Page_Number":521
+        "Page_Number":523
     },
     {
         "Name":"النجم",
@@ -528,7 +528,7 @@
         "Number_Words":359,
         "Number_Letters":1405,
         "Descent":"مكية",
-        "Page_Number":524
+        "Page_Number":526
     },
     {
         "Name":"القمر",
@@ -538,7 +538,7 @@
         "Number_Words":342,
         "Number_Letters":1438,
         "Descent":"مكية",
-        "Page_Number":526
+        "Page_Number":528
     },
     {
         "Name":"الرحمن",
@@ -548,7 +548,7 @@
         "Number_Words":352,
         "Number_Letters":1585,
         "Descent":"مدنية",
-        "Page_Number":529
+        "Page_Number":531
     },
     {
         "Name":"الواقعة",
@@ -558,7 +558,7 @@
         "Number_Words":379,
         "Number_Letters":1692,
         "Descent":"مكية",
-        "Page_Number":532
+        "Page_Number":534
     },
     {
         "Name":"الحديد",
@@ -568,7 +568,7 @@
         "Number_Words":575,
         "Number_Letters":2475,
         "Descent":"مدنية",
-        "Page_Number":535
+        "Page_Number":537
     },
     {
         "Name":"المجادلة",
@@ -578,7 +578,7 @@
         "Number_Words":475,
         "Number_Letters":1991,
         "Descent":"مدنية",
-        "Page_Number":540
+        "Page_Number":542
     },
     {
         "Name":"الحشر",
@@ -588,7 +588,7 @@
         "Number_Words":447,
         "Number_Letters":1913,
         "Descent":"مدنية",
-        "Page_Number":543
+        "Page_Number":545
     },
     {
         "Name":"الممتحنة",
@@ -598,7 +598,7 @@
         "Number_Words":352,
         "Number_Letters":1519,
         "Descent":"مدنية",
-        "Page_Number":547
+        "Page_Number":549
     },
     {
         "Name":"الصف",
@@ -608,7 +608,7 @@
         "Number_Words":226,
         "Number_Letters":936,
         "Descent":"مدنية",
-        "Page_Number":549
+        "Page_Number":551
     },
     {
         "Name":"الجمعة",
@@ -618,7 +618,7 @@
         "Number_Words":177,
         "Number_Letters":749,
         "Descent":"مدنية",
-        "Page_Number":551
+        "Page_Number":553
     },
     {
         "Name":"المنافقون",
@@ -628,7 +628,7 @@
         "Number_Words":180,
         "Number_Letters":780,
         "Descent":"مدنية",
-        "Page_Number":552
+        "Page_Number":554
     },
     {
         "Name":"التغابن",
@@ -638,7 +638,7 @@
         "Number_Words":242,
         "Number_Letters":1066,
         "Descent":"مدنية",
-        "Page_Number":554
+        "Page_Number":556
     },
     {
         "Name":"الطلاق",
@@ -648,7 +648,7 @@
         "Number_Words":279,
         "Number_Letters":1170,
         "Descent":"مدنية",
-        "Page_Number":556
+        "Page_Number":558
     },
     {
         "Name":"التحريم",
@@ -658,7 +658,7 @@
         "Number_Words":254,
         "Number_Letters":1067,
         "Descent":"مدنية",
-        "Page_Number":558
+        "Page_Number":560
     },
     {
         "Name":"الملك",
@@ -668,7 +668,7 @@
         "Number_Words":337,
         "Number_Letters":1316,
         "Descent":"مكية",
-        "Page_Number":560
+        "Page_Number":562
     },
     {
         "Name":"القلم",
@@ -678,7 +678,7 @@
         "Number_Words":301,
         "Number_Letters":1258,
         "Descent":"مكية",
-        "Page_Number":562
+        "Page_Number":564
     },
     {
         "Name":"الحاقة",
@@ -688,7 +688,7 @@
         "Number_Words":261,
         "Number_Letters":1107,
         "Descent":"مكية",
-        "Page_Number":564
+        "Page_Number":566
     },
     {
         "Name":"المعارج",
@@ -698,7 +698,7 @@
         "Number_Words":217,
         "Number_Letters":947,
         "Descent":"مكية",
-        "Page_Number":566
+        "Page_Number":568
     },
     {
         "Name":"نوح",
@@ -708,7 +708,7 @@
         "Number_Words":227,
         "Number_Letters":950,
         "Descent":"مكية",
-        "Page_Number":568
+        "Page_Number":570
     },
     {
         "Name":"الجن",
@@ -718,7 +718,7 @@
         "Number_Words":286,
         "Number_Letters":1089,
         "Descent":"مكية",
-        "Page_Number":570
+        "Page_Number":572
     },
     {
         "Name":"المزمل",
@@ -728,7 +728,7 @@
         "Number_Words":200,
         "Number_Letters":840,
         "Descent":"مكية",
-        "Page_Number":572
+        "Page_Number":574
     },
     {
         "Name":"المدثر",
@@ -738,7 +738,7 @@
         "Number_Words":256,
         "Number_Letters":1015,
         "Descent":"مكية",
-        "Page_Number":573
+        "Page_Number":575
     },
     {
         "Name":"القيامة",
@@ -748,7 +748,7 @@
         "Number_Words":164,
         "Number_Letters":664,
         "Descent":"مكية",
-        "Page_Number":575
+        "Page_Number":577
     },
     {
         "Name":"الإنسان",
@@ -758,7 +758,7 @@
         "Number_Words":243,
         "Number_Letters":1165,
         "Descent":"مدنية",
-        "Page_Number":576
+        "Page_Number":578
     },
     {
         "Name":"المرسلات",
@@ -768,7 +768,7 @@
         "Number_Words":181,
         "Number_Letters":815,
         "Descent":"مكية",
-        "Page_Number":578
+        "Page_Number":580
     },
     {
         "Name":"النبأ",
@@ -778,7 +778,7 @@
         "Number_Words":174,
         "Number_Letters":766,
         "Descent":"مكية",
-        "Page_Number":580
+        "Page_Number":582
     },
     {
         "Name":"النازعات",
@@ -788,7 +788,7 @@
         "Number_Words":179,
         "Number_Letters":762,
         "Descent":"مكية",
-        "Page_Number":581
+        "Page_Number":583
     },
     {
         "Name":"عبس",
@@ -798,7 +798,7 @@
         "Number_Words":133,
         "Number_Letters":538,
         "Descent":"مكية",
-        "Page_Number":583
+        "Page_Number":585
     },
     {
         "Name":"التكوير",
@@ -808,7 +808,7 @@
         "Number_Words":104,
         "Number_Letters":425,
         "Descent":"مكية",
-        "Page_Number":584
+        "Page_Number":586
     },
     {
         "Name":"الانفطار",
@@ -818,7 +818,7 @@
         "Number_Words":81,
         "Number_Letters":326,
         "Descent":"مكية",
-        "Page_Number":585
+        "Page_Number":587
     },
     {
         "Name":"المطففين",
@@ -828,7 +828,7 @@
         "Number_Words":169,
         "Number_Letters":740,
         "Descent":"مكية",
-        "Page_Number":585
+        "Page_Number":587
     },
     {
         "Name":"الانشقاق",
@@ -838,7 +838,7 @@
         "Number_Words":108,
         "Number_Letters":436,
         "Descent":"مكية",
-        "Page_Number":587
+        "Page_Number":589
     },
     {
         "Name":"البروج",
@@ -848,7 +848,7 @@
         "Number_Words":109,
         "Number_Letters":459,
         "Descent":"مكية",
-        "Page_Number":588
+        "Page_Number":590
     },
     {
         "Name":"الطارق",
@@ -858,7 +858,7 @@
         "Number_Words":61,
         "Number_Letters":249,
         "Descent":"مكية",
-        "Page_Number":589
+        "Page_Number":591
     },
     {
         "Name":"الأعلى",
@@ -868,7 +868,7 @@
         "Number_Words":72,
         "Number_Letters":293,
         "Descent":"مكية",
-        "Page_Number":589
+        "Page_Number":591
     },
     {
         "Name":"الغاشية",
@@ -878,7 +878,7 @@
         "Number_Words":92,
         "Number_Letters":378,
         "Descent":"مكية",
-        "Page_Number":590
+        "Page_Number":592
     },
     {
         "Name":"الفجر",
@@ -888,7 +888,7 @@
         "Number_Words":139,
         "Number_Letters":573,
         "Descent":"مكية",
-        "Page_Number":591
+        "Page_Number":593
     },
     {
         "Name":"البلد",
@@ -898,7 +898,7 @@
         "Number_Words":82,
         "Number_Letters":335,
         "Descent":"مكية",
-        "Page_Number":592
+        "Page_Number":594
     },
     {
         "Name":"الشمس",
@@ -908,7 +908,7 @@
         "Number_Words":54,
         "Number_Letters":249,
         "Descent":"مكية",
-        "Page_Number":593
+        "Page_Number":595
     },
     {
         "Name":"الليل",
@@ -918,7 +918,7 @@
         "Number_Words":71,
         "Number_Letters":312,
         "Descent":"مكية",
-        "Page_Number":593
+        "Page_Number":595
     },
     {
         "Name":"الضحى",
@@ -928,7 +928,7 @@
         "Number_Words":40,
         "Number_Letters":164,
         "Descent":"مكية",
-        "Page_Number":594
+        "Page_Number":596
     },
     {
         "Name":"الشرح",
@@ -938,7 +938,7 @@
         "Number_Words":27,
         "Number_Letters":102,
         "Descent":"مكية",
-        "Page_Number":594
+        "Page_Number":596
     },
     {
         "Name":"التين",
@@ -948,7 +948,7 @@
         "Number_Words":34,
         "Number_Letters":156,
         "Descent":"مكية",
-        "Page_Number":595
+        "Page_Number":597
     },
     {
         "Name":"العلق",
@@ -958,7 +958,7 @@
         "Number_Words":72,
         "Number_Letters":281,
         "Descent":"مكية",
-        "Page_Number":595
+        "Page_Number":597
     },
     {
         "Name":"القدر",
@@ -968,7 +968,7 @@
         "Number_Words":30,
         "Number_Letters":112,
         "Descent":"مكية",
-        "Page_Number":596
+        "Page_Number":598
     },
     {
         "Name":"البينة",
@@ -978,7 +978,7 @@
         "Number_Words":94,
         "Number_Letters":412,
         "Descent":"مدنية",
-        "Page_Number":596
+        "Page_Number":598
     },
     {
         "Name":"الزلزلة",
@@ -988,7 +988,7 @@
         "Number_Words":36,
         "Number_Letters":156,
         "Descent":"مدنية",
-        "Page_Number":597
+        "Page_Number":599
     },
     {
         "Name":"العاديات",
@@ -998,7 +998,7 @@
         "Number_Words":40,
         "Number_Letters":164,
         "Descent":"مكية",
-        "Page_Number":597
+        "Page_Number":599
     },
     {
         "Name":"القارعة",
@@ -1008,7 +1008,7 @@
         "Number_Words":36,
         "Number_Letters":158,
         "Descent":"مكية",
-        "Page_Number":598
+        "Page_Number":600
     },
     {
         "Name":"التكاثر",
@@ -1018,7 +1018,7 @@
         "Number_Words":28,
         "Number_Letters":122,
         "Descent":"مكية",
-        "Page_Number":598
+        "Page_Number":600
     },
     {
         "Name":"العصر",
@@ -1028,7 +1028,7 @@
         "Number_Words":14,
         "Number_Letters":70,
         "Descent":"مكية",
-        "Page_Number":599
+        "Page_Number":601
     },
     {
         "Name":"الهمزة",
@@ -1038,7 +1038,7 @@
         "Number_Words":33,
         "Number_Letters":133,
         "Descent":"مكية",
-        "Page_Number":599
+        "Page_Number":601
     },
     {
         "Name":"الفيل",
@@ -1048,7 +1048,7 @@
         "Number_Words":23,
         "Number_Letters":96,
         "Descent":"مكية",
-        "Page_Number":599
+        "Page_Number":601
     },
     {
         "Name":"قريش",
@@ -1058,7 +1058,7 @@
         "Number_Words":17,
         "Number_Letters":73,
         "Descent":"مكية",
-        "Page_Number":600
+        "Page_Number":602
     },
     {
         "Name":"الماعون",
@@ -1068,7 +1068,7 @@
         "Number_Words":25,
         "Number_Letters":112,
         "Descent":"مكية",
-        "Page_Number":600
+        "Page_Number":602
     },
     {
         "Name":"الكوثر",
@@ -1078,7 +1078,7 @@
         "Number_Words":10,
         "Number_Letters":42,
         "Descent":"مكية",
-        "Page_Number":600
+        "Page_Number":602
     },
     {
         "Name":"الكافرون",
@@ -1088,7 +1088,7 @@
         "Number_Words":27,
         "Number_Letters":95,
         "Descent":"مكية",
-        "Page_Number":601
+        "Page_Number":603
     },
     {
         "Name":"النصر",
@@ -1098,7 +1098,7 @@
         "Number_Words":19,
         "Number_Letters":79,
         "Descent":"مدنية",
-        "Page_Number":601
+        "Page_Number":603
     },
     {
         "Name":"المسد",
@@ -1108,7 +1108,7 @@
         "Number_Words":29,
         "Number_Letters":81,
         "Descent":"مكية",
-        "Page_Number":601
+        "Page_Number":603
     },
     {
         "Name":"الإخلاص",
@@ -1118,7 +1118,7 @@
         "Number_Words":15,
         "Number_Letters":47,
         "Descent":"مكية",
-        "Page_Number":602
+        "Page_Number":604
     },
     {
         "Name":"الفلق",
@@ -1128,7 +1128,7 @@
         "Number_Words":23,
         "Number_Letters":71,
         "Descent":"مكية",
-        "Page_Number":602
+        "Page_Number":604
     },
     {
         "Name":"الناس",
@@ -1138,6 +1138,6 @@
         "Number_Words":20,
         "Number_Letters":80,
         "Descent":"مكية",
-        "Page_Number":603
+        "Page_Number":605
     }
 ]

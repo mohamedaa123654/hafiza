@@ -5,12 +5,12 @@ import '../resources/assets_manager.dart';
 import '../resources/color_manager.dart';
 
 class GlobalBackgroundWidget extends StatelessWidget {
-  GlobalBackgroundWidget({
-    super.key,
-    required this.body,
-    required this.title,
-    this.isMainScreens = false,
-  });
+  GlobalBackgroundWidget(
+      {super.key,
+      required this.body,
+      required this.title,
+      this.isMainScreens = false,
+      });
   Widget body;
   bool isMainScreens;
   String title;
@@ -53,7 +53,10 @@ class GlobalBackgroundWidget extends StatelessWidget {
                                             Icons.arrow_back,
                                             color: ColorManager.white,
                                           ),
-                                          onPressed: () => Get.back(),
+                                          onPressed: () {
+                                            Get.back();
+                                            
+                                          },
                                         ),
                                   Text(
                                     title,

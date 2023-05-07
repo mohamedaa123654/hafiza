@@ -91,7 +91,7 @@ class CustomBackgroundWidget extends StatelessWidget {
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: ColorManager.white,
-                                              fontSize: 12.sp),
+                                              fontSize: 13.sp),
                                         ),
                                         Text(
                                           controller.nextPrayer![4],
@@ -99,18 +99,18 @@ class CustomBackgroundWidget extends StatelessWidget {
                                               fontWeight: FontWeight.w500,
                                               fontFamily: 'Maghribi',
                                               color: ColorManager.white,
-                                              fontSize: 18.sp),
+                                              fontSize: 20.sp),
                                         ),
                                       ],
                                     ),
                                     SizedBox(
                                       width: 8.w,
                                     ),
-                                    Obx(() {
-                                      return CircularPercentIndicator(
+                                     CircularPercentIndicator(
                                         radius: 12.5.w,
                                         lineWidth: 3.sp,
                                         percent: controller.percentage.value,
+
                                         center: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
@@ -128,8 +128,8 @@ class CustomBackgroundWidget extends StatelessWidget {
                                           ],
                                         ),
                                         progressColor: ColorManager.white,
-                                      );
-                                    })
+                                      )
+                                    
                                   ],
                                 )
                               : GestureDetector(

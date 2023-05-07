@@ -54,6 +54,14 @@ class AzkaryController extends GetxController {
     });
   }
 
+  closeLastZikr() {
+    count.value = 0;
+    index.value = 0;
+    percentOfLength.value = 0;
+    percent.value = 0;
+    print('object');
+  }
+
   var boardController = PageController();
   RxInt count = 0.obs;
   // bool isLast = false;
@@ -69,11 +77,21 @@ class AzkaryController extends GetxController {
 
   var percent = 0.0.obs;
 
-  updateZikrCount() {
+  updateZikrCount() async {
     if (count.value < azkaryList[index.value].count!) {
       count.value += 1;
       percent.value = count.value / azkaryList[index.value].count!;
-      if (percent.value == 1) boardController.jumpToPage(index.value + 1);
+
+      if (percent.value == 1) {
+        await Future.delayed(const Duration(milliseconds: 500));
+        boardController.jumpToPage(index.value + 1);
+      }
     }
   }
+
+  // @override
+  // void onClose() {
+  //   closeZikr();
+  //   super.onClose();
+  // }
 }

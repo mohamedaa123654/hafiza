@@ -9,7 +9,7 @@ class SplashView extends StatelessWidget {
   SplashView({Key? key}) : super(key: key);
 
   final SplashController splashController = Get.find();
-   
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +27,7 @@ class SplashView extends StatelessWidget {
             ImageAssets.logo,
             width: 50.w,
             height: 40.w,
+            color: ColorManager.darkPrimary,
           ))),
     );
   }

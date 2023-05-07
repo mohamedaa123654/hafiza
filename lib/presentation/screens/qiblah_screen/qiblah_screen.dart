@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hafiza/presentation/widgets/global_background.dart';
 import 'package:hafiza/presentation/controller/main_controller/main_controller.dart';
 import 'package:hafiza/presentation/screens/qiblah_screen/qiblah_widget.dart';
@@ -11,6 +12,7 @@ class QiblahScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GlobalBackgroundWidget(
+     
       body: Padding(
           padding: EdgeInsets.only(top: 5.w),
           child: Column(

@@ -48,12 +48,13 @@ class _QiblahWidgetState extends State<QiblahWidget>
                           'assets/images/qiblah.png',
                           height: 30.w,
                           width: 30.w,
+                          color: ColorManager.darkPrimary,
                         ),
                       ),
                       Center(
                           child: Container(
                         decoration:
-                            containerStyle(ColorManager.containerLightGreen),
+                            containerStyle(ColorManager.containerLightPrimary),
                         child: SizedBox(
                           width: 60.w,
                           child: Padding(
@@ -92,7 +93,10 @@ class _QiblahWidgetState extends State<QiblahWidget>
                       animation: animation!,
                       builder: (context, child) => Transform.rotate(
                           angle: animation!.value,
-                          child: Image.asset('assets/images/qiblah.png')),
+                          child: Image.asset(
+                            'assets/images/qiblah.png',
+                            color: ColorManager.darkPrimary,
+                          )),
                     ))),
           );
         },

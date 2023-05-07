@@ -5,10 +5,8 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:sizer/sizer.dart';
 
 class PrayerCount extends StatelessWidget {
-  const PrayerCount({
-    super.key,
-  });
-
+  const PrayerCount({super.key, });
+ 
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +14,7 @@ class PrayerCount extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(1.5.w),
         width: 100.w,
-        decoration: containerStyle(ColorManager.containerLightGreen),
+        decoration: containerStyle(ColorManager.containerLightPrimary),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,

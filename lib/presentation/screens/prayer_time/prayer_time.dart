@@ -6,6 +6,7 @@ import 'package:hafiza/presentation/resources/assets_manager.dart';
 import 'package:hafiza/presentation/resources/color_manager.dart';
 import 'package:hafiza/presentation/resources/styles_manager.dart';
 import 'package:hafiza/presentation/widgets/counter.dart';
+import 'package:hafiza/presentation/widgets/custom_background.dart';
 import 'package:hafiza/presentation/widgets/global_background.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:sizer/sizer.dart';
@@ -17,166 +18,75 @@ class PrayerTimeScreen extends StatelessWidget {
   PrayerTimeController controller = Get.put(Get.find());
   @override
   Widget build(BuildContext context) {
-    return GlobalBackgroundWidget(
+    return CustomBackgroundWidget(
+      // onEnd: controller.calculateNextPrayerTime(),
+      controller: controller,                              
       body: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: EdgeInsets.all(4.w),
-            child: Container(
-              height: 30.w,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  image: const DecorationImage(
-                      image: AssetImage(ImageAssets.containerBG),
-                      fit: BoxFit.fitWidth)),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  // color: ColorManager.grey.withOpacity(0.4),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      ColorManager.black.withOpacity(0.0),
-                      // ColorManager.black.withOpacity(0.0),
-                      ColorManager.black.withOpacity(01)
-                    ],
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          width: 12.w,
-                          height: 12.w,
-                          child: SvgPicture.asset(
-                            controller.nextPrayer![3],
-                            fit: BoxFit.fitWidth,
-                            colorFilter: ColorFilter.mode(
-                                ColorManager.white, BlendMode.srcIn),
-                          ),
-                        ),
-                        Text(
-                          'اذان ${controller.nextPrayer![1]}',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: ColorManager.white,
-                              fontSize: 16.sp),
-                        ),
-                        Text(
-                          controller.nextPrayer![4],
-                          style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: ColorManager.white,
-                              fontSize: 14.sp),
-                        ),
-                      ],
-                    ),
-                    VerticalDivider(
-                      thickness: 1.w,
-                      indent: 4.w,
-                      endIndent: 4.w,
-                      color: ColorManager.primary,
-                    ),
-                    Obx(() {
-                      return CircularPercentIndicator(
-                        radius: 12.5.w,
-                        lineWidth: 3.sp,
-                        percent: controller.percentage.value,
-                        // animateFromLastPercent: true,
-
-                        center: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            // Icon(
-                            //   Icons.settings,
-                            //   color: ColorManager.white,
-                            //   size: 18.sp,
-                            // ),
-                            Text(
-                              'باقي من الوقت',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: ColorManager.white,
-                                  fontSize: 14.sp),
-                            ),
-                            // Obx(() {
-                            //   return Text(
-                            //     '${controller.remainingSeconds.value}',
-                            //     style: TextStyle(
-                            //         fontWeight: FontWeight.w300,
-                            //         color: ColorManager.white,
-                            //         fontSize: 12.sp),
-                            //   );
-                            // }),
-                            CounterDown(controller: controller),
-                          ],
-                        ),
-
-                        progressColor: ColorManager.white,
-                      );
-                    })
-                  ],
-                ),
-              ),
-            ),
+          SizedBox(
+            height: 8.h,
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 4.w),
             child: Container(
-              height: 50.h,
+              height: 45.h,
               width: 100.w,
-              decoration: containerStyle(ColorManager.containerLightGreen),
-              child: ListView.separated(
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 4.w),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          SizedBox(
-                            width: 12.w,
-                            height: 12.w,
-                            child: SvgPicture.asset(
-                              controller.allPrayers[index][3],
-                              fit: BoxFit.fitWidth,
-                              colorFilter: const ColorFilter.mode(
-                                  ColorManager.primary, BlendMode.srcIn),
+              alignment: Alignment.topCenter,
+              decoration: containerStyle(ColorManager.containerLightPrimary),
+              child: Center(
+                child: ListView.separated(
+                    padding: EdgeInsets.symmetric(vertical: 1.h),                                                                                                                    
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 4.w),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              width: 12.w,
+                              height: 12.w,
+                              child: SvgPicture.asset(
+                                controller.allPrayers[index][3],
+                                fit: BoxFit.fitWidth,
+                                colorFilter: const ColorFilter.mode(
+                                    ColorManager.primary, BlendMode.srcIn),
+                              ),
                             ),
-                          ),
-                          Text(
-                            controller.allPrayers[index][1],
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: ColorManager.black,
-                                fontSize: 16.sp),
-                          ),
-                          Text(
-                            controller.allPrayers[index][4],
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500,
-                                color: ColorManager.black,
-                                fontSize: 14.sp),
-                          ),
-                        ],
-                      ),
-                    );
-                  },
-                  separatorBuilder: (context, index) {
-                    return Divider(
-                      height: 1.w,
-                    );
-                  },
-                  itemCount: 6),
+                            Text(
+                              controller.allPrayers[index][1],
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  color: ColorManager.darkPrimary,
+                                  fontSize: 16.sp),
+                            ),
+                            Text(
+                              controller.allPrayers[index][4],
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  color: ColorManager.grey,
+                                  fontSize: 14.sp),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                    separatorBuilder: (context, index) {
+                      return Divider(
+                        endIndent: 2.w,
+                        indent: 2.w,
+                        thickness: 2,
+                        height: 0.8.h,
+                        color: ColorManager.darkPrimary,
+                      );
+                    },
+                    itemCount: 6),
+              ),
             ),
           )
         ],
       ),
-      title: 'مواقيت الصلاة',
+      // title: 'مواقيت الصلاة',
     );
   }
 }

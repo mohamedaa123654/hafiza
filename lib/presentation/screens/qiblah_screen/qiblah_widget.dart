@@ -51,12 +51,13 @@ class _QiblahScreenWidgetState extends State<QiblahScreenWidget>
                           'assets/images/qiblah.png',
                           height: 60.w,
                           width: 60.w,
+                          color: ColorManager.darkPrimary,
                         ),
                       ),
                       Center(
                           child: Container(
                         decoration:
-                            containerStyle(ColorManager.containerLightGreen),
+                            containerStyle(ColorManager.containerLightPrimary),
                         child: SizedBox(
                           width: 60.w,
                           child: Padding(
@@ -65,7 +66,8 @@ class _QiblahScreenWidgetState extends State<QiblahScreenWidget>
                               'قم بتشغيل خدمة المواقع في جهازك لتتمكن من تحديد القبلة',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontSize: 12.sp, color: ColorManager.darkPrimary),
+                                  fontSize: 12.sp,
+                                  color: ColorManager.darkPrimary),
                             ),
                           ),
                         ),
@@ -75,7 +77,6 @@ class _QiblahScreenWidgetState extends State<QiblahScreenWidget>
                 ),
               ],
             );
-         
           }
 
           final qiblahDirection = snapshot.data;
@@ -96,7 +97,10 @@ class _QiblahScreenWidgetState extends State<QiblahScreenWidget>
                       animation: animation!,
                       builder: (context, child) => Transform.rotate(
                           angle: animation!.value,
-                          child: Image.asset('assets/images/qiblah.png')),
+                          child: Image.asset(
+                            'assets/images/qiblah.png',
+                            color: ColorManager.darkPrimary,
+                          )),
                     ))),
           );
         },
