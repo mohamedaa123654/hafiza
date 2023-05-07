@@ -18,61 +18,30 @@ class SwraScreen extends StatelessWidget {
     required this.quranModel,
     this.sura = '',
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: ColorManager.bgColor,
-        // appBar: controller.isAppBarVisible.value
-        //     ? AppBar(
-        //         title: Text(quranModel!.name!),
-        //         elevation: 0,
-        //         flexibleSpace: const Image(
-        //           image: AssetImage(ImageAssets.homeBG),
-        //           fit: BoxFit.cover,
-        //         ),
-        //         backgroundColor: Colors.transparent,
-        //       )
-        //     : null,
         body: SafeArea(
           child: Container(
-              width: 100.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              // child: Padding(
-              //   padding: EdgeInsets.all(4.w),
-              //   child: Text(
-              //     sura.replaceAll('\n', ' '),
-              //     textAlign: TextAlign.center,
-              //     style: TextStyle(
-              //         fontSize: 16.sp,
-              //         fontWeight: FontWeight.bold,
-              //         color: ColorManager.black),
-              //   ),
-              // )
-              // child: PDFViewer(
-              //   path: 'assets/db/quran.pdf',
-              //   startPage: 10,
-              //   endPage: 15,
-              // )
-              child: Column(
-                children: [
-                  // Icon(Icons.lock),
-                  // Icon(Icons.arrow_circle_right_outlined),
+            width: 100.w,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: PDF(
+                fitPolicy: FitPolicy.BOTH,
+                autoSpacing: false,
+                defaultPage: quranModel!.pageNumber!,
+                onPageChanged: (int? x, int? y) {
+                  print(x);
+                  print(y);
+                }
+                
+                // swipeHorizontal: true
 
-                  PDF(
-                    fitPolicy: FitPolicy.BOTH,
-                    autoSpacing: true,
-                    defaultPage: quranModel!.pageNumber!,
-                    // swipeHorizontal: true
-                  ).
-                  fromAsset('assets/db/quran.pdf'),
-                ],
-              ),
-              ),
+                ).fromAsset('assets/db/quran.pdf'),
+          ),
         ));
   }
 }
-
-//   late int id;
-//  title: Text(surah[id-1]['arabic']),
