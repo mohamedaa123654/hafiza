@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hafiza/app/network_info.dart';
+import 'package:hafiza/presentation/controller/main_controller/main_controller.dart';
 import 'package:hafiza/presentation/controller/prayer_time/prayer_time_controller.dart';
 import 'package:hafiza/presentation/resources/routes_manager.dart';
 import 'package:hafiza/presentation/screens/main/widgets/prayer_count.dart';
 import 'package:hafiza/presentation/screens/main/widgets/qiblah_widget.dart';
+import 'package:hafiza/presentation/screens/prayer_time/prayer_time.dart';
 import 'package:hafiza/presentation/screens/qiblah_screen/qiblah_screen.dart';
 import 'package:hafiza/presentation/resources/assets_manager.dart';
 import 'package:hafiza/presentation/resources/color_manager.dart';
@@ -18,7 +20,8 @@ class MainView extends StatelessWidget {
   PrayerTimeController controller = Get.put(PrayerTimeController(
       Get.put<NetworkInfo>(
           NetworkInfoImpl(Get.put(InternetConnectionChecker())))));
-
+  MainController mainController = Get.put(MainController(Get.put<NetworkInfo>(
+      NetworkInfoImpl(Get.put(InternetConnectionChecker())))));
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundWidget(
@@ -40,11 +43,21 @@ class MainView extends StatelessWidget {
                     decoration: containerStyle(ColorManager.white),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemCount: 4,
+                      itemCount: mainController.mainList.length,
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: () {
-                            Get.toNamed(Routes.prayerTimeRoute);
+                            switch (index) {
+                              case 0:
+                                Get.to(PrayerTimeScreen());
+                                break;
+                              case 1:
+                                Get.to(PrayerTimeScreen());
+                                break;
+                              case 2:
+                                Get.to(PrayerTimeScreen());
+                                break;
+                            }
                           },
                           child: Column(
                             children: [
@@ -60,13 +73,13 @@ class MainView extends StatelessWidget {
                                           width: 2,
                                           color: ColorManager.lightGrey)),
                                   child: Image.asset(
-                                    ImageAssets.logo,
+                                    mainController.mainList[index].image!,
                                     color: ColorManager.darkPrimary,
                                   ),
                                 ),
                               ),
                               Text(
-                                'مواقيت الصلاة',
+                                mainController.mainList[index].name!,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: ColorManager.grey,

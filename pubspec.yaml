@@ -28,8 +28,6 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  camera: ^0.10.3+2
-  chatview: ^1.2.1
   cupertino_icons: ^1.0.2
   dio: ^5.0.1
   flutter:
@@ -79,6 +77,9 @@ flutter:
     - family: Maghribi
       fonts:
         - asset: assets/fonts/Maghribi.ttf
+    - family: quran
+      fonts:
+        - asset: assets/fonts/HafsSmart_08.ttf
     - family: me_quran
       fonts:
         - asset: assets/fonts/me_quran.ttf

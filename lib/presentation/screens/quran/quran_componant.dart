@@ -14,9 +14,12 @@ Widget buildSuraItem({required QuranModel model, index, context}) {
       onTap: () {
         Get.to(SwraScreen(
           quranModel: model,
+          swra: model.number,
           length: controller.getSuraLength(controller.suwar[index].pageNumber!,
               controller.suwar[index + 1].pageNumber!),
+              numberVerses: model.numberVerses,
           first: controller.suwar[index].pageNumber!,
+          start: model.start,
         ));
       },
       child: Container(
@@ -85,7 +88,7 @@ Widget buildJuzaaItem({required JuzaaModel model, index, context}) {
   return InkWell(
       onTap: () {
         Get.to(SwraScreen(
-          quranModel: model,
+          juzaaModel: model,
           length: controller.getSuraLength(controller.juzaaList[index].page!,
               controller.juzaaList[index + 1].page!),
           first: controller.juzaaList[index].page!,

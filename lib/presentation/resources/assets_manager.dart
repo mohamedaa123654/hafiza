@@ -11,6 +11,11 @@ class ImageAssets {
   static const String optionsIcon = "$imagePath/options.png";
   static const String categoryIcon = "$imagePath/category.png";
   static const String prayIcon = "$imagePath/pray.png";
+  static const String mosqueIcon = "$imagePath/mosque.png";
+  static const String khatmaIcon = "$imagePath/khatma.png";
+  static const String prayTimeIcon = "$imagePath/pray_time.png";
+  static const String suraImage = "assets/quranImages/1.png";
+  static const String ayatImage = "$imagePath/ayat.jpeg";
 }
 
 class JsonAssets {
@@ -18,4 +23,6 @@ class JsonAssets {
   static const String azkary = "$db/azkary.json";
   static const String azkaryDB = "$db/azkary_db.json";
   static const String juzaaDB = "$db/juzaa.json";
+  static const String tafsser = "$db/tafsser.json";
+  static const String quranTxt = "$db/quran.txt";
 }

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:hafiza/app/network_info.dart';
@@ -19,7 +20,6 @@ class PrayerTimeController extends GetxController {
   RxBool isDataLoaded = false.obs;
   final formatNumber = NumberFormat.decimalPattern('ar');
 
-
   @override
   void onInit() async {
     if (await networkInfo.isConnected) {
@@ -29,7 +29,7 @@ class PrayerTimeController extends GetxController {
     } else {
       isConnected.value = false;
     }
-
+    initializeNotifications();
     super.onInit();
   }
 
@@ -52,15 +52,14 @@ class PrayerTimeController extends GetxController {
     }
   }
 
- 
-
   List<String>? nextPrayer;
   List<List<String>> allPrayers = [];
   List<String>? previousPrayer;
   DateTime? nextPrayerTime;
   DateTime? previousPrayerTime;
   double? counter;
-  calculateNextPrayerTime() async { DateTime now = DateTime.now();
+  calculateNextPrayerTime() async {
+    DateTime now = DateTime.now();
     print('calculateNextPrayerTime');
     List<List<String>> data = [
       [
@@ -68,42 +67,42 @@ class PrayerTimeController extends GetxController {
         'الفجر',
         '0',
         'assets/images/prayer/0.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.fajr??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.fajr ?? ''),
       ],
       [
         prayTimeModel!.data!.timings!.sunrise ?? '',
         'الشروق',
         '1',
         'assets/images/prayer/1.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.sunrise??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.sunrise ?? ''),
       ],
       [
         prayTimeModel!.data!.timings!.dhuhr ?? '',
         'الظهر',
         '1',
         'assets/images/prayer/2.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.dhuhr??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.dhuhr ?? ''),
       ],
       [
         prayTimeModel!.data!.timings!.asr ?? '',
         'العصر',
         '3',
         'assets/images/prayer/3.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.asr??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.asr ?? ''),
       ],
       [
         prayTimeModel!.data!.timings!.maghrib ?? '',
         'المغرب',
         '4',
         'assets/images/prayer/4.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.maghrib??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.maghrib ?? ''),
       ],
       [
         prayTimeModel!.data!.timings!.isha ?? '',
         'العشاء',
         '5',
         'assets/images/prayer/5.svg',
-        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.isha??''),
+        convertTimeTo12HourFormat(prayTimeModel!.data!.timings!.isha ?? ''),
       ]
     ];
     allPrayers = data;
@@ -151,6 +150,42 @@ class PrayerTimeController extends GetxController {
     return '$hourString:$minuteString $meridiem';
   }
 
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+  Future<void> initializeNotifications() async {
+    // initialize settings for each platform (Android and iOS)
+    const initializationSettingsAndroid =
+        AndroidInitializationSettings('app_icon');
+    const initializationSettingsIOS = IOSInitializationSettings();
+    const initializationSettings = InitializationSettings(
+        android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+
+    // initialize the plugin with the initialization settings
+    await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+  }
+
+  Future<void> showNotification() async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+      'channel_id',
+      'channel_name',
+      importance: Importance.max,
+      priority: Priority.high,
+      sound: RawResourceAndroidNotificationSound('azan'),
+      // Replace 'notification_sound' with the name of your sound file located in the `android/app/src/main/res/raw` directory.
+    );
+
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+
+    await flutterLocalNotificationsPlugin.show(
+      0, // notification id
+      'حان الان موعد اذان ',
+      'Notification Body',
+      platformChannelSpecifics,
+    );
+  }
+
   RxInt remainingSeconds = 0.obs;
   RxInt endTime = 0.obs;
   late Timer timer;
@@ -171,6 +206,7 @@ class PrayerTimeController extends GetxController {
         percentage.value = 1 - (remainingSeconds.value / timeBetweenPrayers);
       } else if (remainingSeconds.value == 1) {
         timer.cancel();
+        showNotification();
         calculateNextPrayerTime();
       }
     });

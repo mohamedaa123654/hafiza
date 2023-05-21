@@ -5,15 +5,19 @@ import '../resources/assets_manager.dart';
 import '../resources/color_manager.dart';
 
 class GlobalBackgroundWidget extends StatelessWidget {
-  GlobalBackgroundWidget(
-      {super.key,
-      required this.body,
-      required this.title,
-      this.isMainScreens = false,
-      });
+  GlobalBackgroundWidget({
+    super.key,
+    required this.body,
+    required this.title,
+    this.isMainScreens = false,
+    this.height = 78,
+    this.location = 9,
+  });
   Widget body;
   bool isMainScreens;
   String title;
+  int height;
+  int location;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +59,6 @@ class GlobalBackgroundWidget extends StatelessWidget {
                                           ),
                                           onPressed: () {
                                             Get.back();
-                                            
                                           },
                                         ),
                                   Text(
@@ -74,10 +77,10 @@ class GlobalBackgroundWidget extends StatelessWidget {
                           ]),
                         )),
                     Positioned(
-                      bottom: 9.h,
+                      bottom: location.h,
                       child: Container(
                           width: 100.w,
-                          height: 78.h,
+                          height: height.h,
                           decoration: BoxDecoration(
                               color: ColorManager.white,
                               borderRadius: const BorderRadius.only(

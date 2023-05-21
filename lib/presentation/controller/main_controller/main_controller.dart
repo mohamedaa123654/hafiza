@@ -1,7 +1,10 @@
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:hafiza/app/network_info.dart';
+import 'package:hafiza/data/models/main_model.dart';
+import 'package:hafiza/presentation/resources/assets_manager.dart';
 import 'package:hafiza/presentation/resources/constants_manager.dart';
+import 'package:hafiza/presentation/screens/prayer_time/prayer_time.dart';
 
 class MainController extends GetxController {
   final NetworkInfo networkInfo;
@@ -15,6 +18,26 @@ class MainController extends GetxController {
 
     super.onInit();
   }
+
+  List<MainModel> mainList = [
+    MainModel(
+        image: ImageAssets.prayTimeIcon,
+        name: "مواقيت الصلاة",
+        onTap: () {
+          Get.to(PrayerTimeScreen());
+        }),
+        MainModel(
+        image: ImageAssets.mosqueIcon,
+        name: "اقرب مسجد",
+        onTap: () {
+          Get.to(PrayerTimeScreen());
+        }),MainModel(
+        image: ImageAssets.khatmaIcon,
+        name: "ختمة",
+        onTap: () {
+          Get.to(PrayerTimeScreen());
+        }),
+  ];
 
   double? latitude;
   double? longitude;
